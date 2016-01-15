@@ -5,8 +5,8 @@
 * @docs        :: http://sailsjs.org/#!documentation/models
 */
 
-var ContactDetails = require('./ContactDetails');
-var BaseUser = require('./BaseUser');
+var ContactDetails = require('./base/ContactDetails');
+var BaseUser = require('./base/BaseUser');
 module.exports = _.merge({}, BaseUser, ContactDetails, {
 
   attributes: {

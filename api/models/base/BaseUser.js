@@ -1,18 +1,21 @@
 /**
-* Company.js
+* BaseUser.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
 */
 
-var ContactDetails = require('./base/ContactDetails');
-module.exports = _.merge({}, ContactDetails, {
+module.exports = {
 
   attributes: {
-  	name: {
+  	username: {
+  		type: 'string',
+  		required: true
+  	},
+  	password: {
   		type: 'string',
   		required: true
   	}
   }
-});
+};
 
